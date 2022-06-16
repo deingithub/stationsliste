@@ -15,6 +15,7 @@ LANGS = {
         "category": "Preisklasse",
         "stationid": "Bahnhofsnummer",
         "operator": "Betreiber",
+        "rni_warn_html": '<p class="sm">Station von DB RegioNetz: Keine Daten dazu, welche Bahnsteige gemeinsam sind.</p>',
         "h1": "alle bahnhöfe und haltepunkte der deutschen bahn",
         "subtitle": "nebst ihrer sich für laien in einigen fällen durchaus nicht unmittelbar erschließenden bahnsteignummerierung",
         "hints": "Hinweise",
@@ -37,6 +38,7 @@ LANGS = {
         "category": "Category",
         "stationid": "Station Number",
         "operator": "Operator",
+        "rni_warn_html": '<p class="sm">DB RegioNetz station: No data about which platforms are shared.</p>',
         "h1": "deutsche bahn's network",
         "subtitle": "including their platform numbers, frequent source of confusion and frustration to the layperson",
         "hints_html": """<h2>Hints</h2>
@@ -80,7 +82,9 @@ def bahnhoefe():
                     ("Betreiber_Name", "betreibername"),
                 )
             }
-            if len(stationsdaten[row["Betreiber_Nr"]]["name"]) < len(row["NAME"]):
+            if len(stationsdaten[row["Betreiber_Nr"]]["name"]) < len(
+                row["NAME"]
+            ) and not row["NAME"].endswith("(S)"):
                 stationsdaten[row["Betreiber_Nr"]]["name"] = row["NAME"]
         else:
             for bfnr, station in stationsdaten.items():
@@ -97,7 +101,9 @@ def bahnhoefe():
                             ("Betreiber_Name", "betreibername"),
                         )
                     }
-                    if len(stationsdaten[bfnr]["name"]) < len(row["NAME"]):
+                    if len(stationsdaten[bfnr]["name"]) < len(row["NAME"]) and not row[
+                        "NAME"
+                    ].endswith("(S)"):
                         stationsdaten[bfnr]["name"] = row["NAME"]
                     break
             else:
@@ -125,6 +131,8 @@ def bahnhof_render(bf, lang):
         "SELECT DISTINCT platform FROM platform WHERE bfnr = ? ORDER BY platform",
         (bf.get("bahnhofsnummer"),),
     ):
+        if bf.get("betreibername") == "DB RegioNetz Infrastruktur GmbH":
+            platforms_html += lang["rni_warn_html"]
         for platform in platforms:
             tracks = db.execute(
                 "SELECT * FROM platform WHERE bfnr = ? AND platform = ?",
@@ -155,11 +163,16 @@ def bahnhof_render(bf, lang):
         + " | ".join([f"<b>{k}</b> {v}" for k, v in facts.items() if v])
         + "</p>"
     )
+
+    osm_link = ""
+    if "lon" in bf.keys():
+        osm_link = f'<a href="https://www.openstreetmap.org/#map=17/{bf["lat"].replace(",", ".")}/{bf["lon"].replace(",", ".")}">OpenStreetMap</a>'
+
     return f"""<section data-name="{bf["name"]}">
 	<h2 id="{bf["ds100"]}"><a href="#{bf["ds100"]}">{bf["name"]}</a></h2>
 	{address_html}
 	{facts_html}
-	<a href="https://dbf.finalrewind.org/{bf["ds100"]}">db-infoscreen</a> <a href="https://www.bahnhof.de/service/search/bahnhof-de/520608?query={bf["name"]}">bahnhof.de</a>
+	<a href="https://dbf.finalrewind.org/{bf["ds100"]}">db-infoscreen</a> <a href="https://www.bahnhof.de/service/search/bahnhof-de/520608?query={bf["name"]}">bahnhof.de</a> {osm_link}
 	{platforms_html}
 	</section>"""
 
@@ -230,7 +243,13 @@ def generate():
 			    
 			    <button>
 			        {lang["resetbutton"]}
-			        <script>me().on("click", ev => {{ halt(ev); any("section").classRemove("hide"); }})</script>
+			        <script>
+					    me().on("click", ev => {{
+					    	halt(ev);
+					    	any("section").classRemove("hide");
+					    	me("#search-input").value = "";
+				    	}})
+		        	</script>
 			    </button>	    
 			    </div>
 		    	</form>"""

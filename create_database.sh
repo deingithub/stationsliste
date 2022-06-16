@@ -19,14 +19,22 @@ sqlite3 bahnhof.sqlite3 <<EOF
 .import sus-bahnsteigdaten-2020-03.csv sus_bahnsteigdaten
 .import rni-bahnsteigdaten-2020-04.csv rni_bahnsteigdaten
 
+/*
+	platform(bfnr,platform,track_name,length,height)
+	RegioNetz-Datensatz hat einfach keine Bahnsteigangaben, deswegen dichten wir jedem Gleis seinen eigenen dazu.
+*/
 CREATE VIEW platform(bfnr, platform, track_name, length, height)
 AS SELECT "Bahnhofsnummer", "Bahnsteig", "Gleisnummer", "Netto-baulänge (m)", "Höhe Bahnsteigkante (cm)""" FROM sus_bahnsteigdaten
-UNION SELECT "Bf-Nr", NULL, "Bahnsteig-Nr.", "NETTOLAENGE [m]", "HOEHE [cm]" FROM rni_bahnsteigdaten
-/* platform(bfnr,platform,track_name,length,height) */;
+UNION SELECT "Bf-Nr", rowid, "Bahnsteig-Nr.", "NETTOLAENGE [m]", "HOEHE [cm]" FROM rni_bahnsteigdaten;
+
+/*
+	stationsdaten(regionalbereich,bahnhofsnummer,name,ds100,kategorie,strasse,plz,ort,bundesland,aufgabentraeger)
+	
+	Die gemeinsamen Spalten von sus_stationsdaten und rni_stationsdaten.
+*/
 
 CREATE VIEW stationsdaten(regionalbereich, bahnhofsnummer, name, ds100, kategorie, strasse, plz, ort, bundesland, aufgabentraeger)
 AS SELECT "RB", "Bf. Nr.", "Station", "Bf DS 100Abk.", "Kat. Vst", "Straße", "PLZ", "Ort", "Bundesland", "Aufgabenträger" FROM sus_stationsdaten
-UNION SELECT "Regionalbereich", "Bf. Nr.", "Station", "Bf DS 100 Abk.", "Kategorie Vst", "Straße", "PLZ", "Ort", "Bundesland", "Aufgabenträger" FROM rni_stationsdaten
-/* stationsdaten(regionalbereich,bahnhofsnummer,name,ds100,kategorie,strasse,plz,ort,bundesland,aufgabentraeger) */;
+UNION SELECT "Regionalbereich", "Bf. Nr.", "Station", "Bf DS 100 Abk.", "Kategorie Vst", "Straße", "PLZ", "Ort", "Bundesland", "Aufgabenträger" FROM rni_stationsdaten;
 
 EOF
