@@ -1,0 +1,388 @@
+Bf-Nr;RIL 100;BFNAM;Bahnsteig-Nr.;HOEHE [cm];NETTOLAENGE [m]
+8263;FATC;Ahnatal-Casselbreite;1;38;115
+8263;FATC;Ahnatal-Casselbreite;2;38;115
+2616;FHEH;Ahnatal-Heckershausen;1;38;115
+2616;FHEH;Ahnatal-Heckershausen;2;38;115
+6618;FWEI;Ahnatal-Weimar;1;38;113
+6618;FWEI;Ahnatal-Weimar;2;38;123
+33;MAIC;Aich (Niederbay);1;38;115
+102;FAHN;Altenhasungen;1;38;110
+106;MATM;Altenmarkt (Alz);1;38;60
+127;MAT;Altötting;1;55;136
+127;MAT;Altötting;2;55;220
+127;MAT;Altötting;3;55;220
+138;NAMB;Amorbach;2;55;100
+138;NAMB;Amorbach;3;55;100
+153;DABM;Annaberg-Buchholz Mitte;1;55;80
+154;DAB;Annaberg-Buchholz Süd;15 01;55;100
+154;DAB;Annaberg-Buchholz Süd;15 02;55;100
+155;DABU;Annaberg-Buchholz unt Bahnhof;14 01;55;100
+155;DABU;Annaberg-Buchholz unt Bahnhof;14 02;55;100
+162;DATL;Antonsthal;2;55;100
+162;DATL;Antonsthal;3;55;100
+165;MAK;Anzenkirchen;1;38;120
+4666;NOBN;Aschaffenburg-Obernau;1;55;140
+205;DAU;Aue (Sachs);1;55;100
+205;DAU;Aue (Sachs);33;55;170
+205;DAU;Aue (Sachs);34;55;100
+8216;DAUS;Aue (Sachs) Erzgebirgsstadion;1;55;80
+7463;FAR;Bad Arolsen;1;55;114
+7463;FAR;Bad Arolsen;2;35;166
+255;MBIB;Bad Birnbach;2;38;120
+283;MBHT;Bad Höhenstadt;1;38;60
+3487;ELSP;Bad Laasphe;1;55;100
+3487;ELSP;Bad Laasphe;2;55;100
+8223;ENL;Bad Laasphe-Niederlaasphe;1;55;100
+305;TBMR;Bad Mergentheim;1;21;174
+305;TBMR;Bad Mergentheim;2;30;210
+305;TBMR;Bad Mergentheim;3;38;210
+5587;DSUB;Bad Schlema;1;55;80
+5587;DSUB;Bad Schlema;2;55;80
+362;FBWD;Bad Wildungen;1;55;222
+407;DBS;Bärenstein (Kr Annaberg);1;25;120
+434;MBYB;Bayerbach;1;38;120
+445;UBET;Bechstedt-Trippstein;1;38;120
+8217;MBID;Bibelöd;1;55;100
+620;FBIK;Biedenkopf;2;38;109
+620;FBIK;Biedenkopf;3;38;108
+8218;FBIZ;Biedenkopf Wirtschafts- und Wissenscampus;1;55;110
+6502;FWA;Biedenkopf-Wallau;1;55;110
+657;FBBH;Birkenbringhausen;1;55;101
+697;TBLF;Blaufelden;1;26;138
+697;TBLF;Blaufelden;2;23;262
+711;DBLU;Blumenau;1;55;80
+745;RBGH;Bödigheim;1;55;100
+745;RBGH;Bödigheim;2;55;100
+848;DBRE;Breitenbrunn (Erzgeb);1;55;80
+930;RBUN;Buchen im Odenwald;1;26;87
+930;RBUN;Buchen im Odenwald;2;33;100
+931;RBUO;Buchen Ost;1;27;58
+932;FBNU;Buchenau (Lahn);2;38;105
+932;FBNU;Buchenau (Lahn);3;24;116
+985;MBUH;Burghausen;1;55;144
+985;MBUH;Burghausen;2;35;91
+985;MBUH;Burghausen;3;35;112
+990;MBGK;Burgkirchen;1;55;120
+1001;DBUF;Burkhardtsdorf;1;55;100
+1001;DBUF;Burkhardtsdorf;2;55;100
+8219;DBUM;Burkhardtsdorf Mitte;1;55;80
+1018;DCDF;Cainsdorf;1;55;93
+1018;DCDF;Cainsdorf;2;55;93
+1023;FCLD;Caldern;1;38;110
+1047;DCE;Chemnitz-Erfenschlag;1;55;80
+1051;DCRE;Chemnitz-Reichenhain;1;55;80
+5210;NRF;Collenberg;1;55;100
+1094;UCF;Cursdorf;1;96;30
+1228;TDIH;Distelhausen;1;55;100
+1232;DDF;Dittersdorf;1;55;80
+1233;TDM;Dittigheim;1;27;59
+1267;DDCH;Dorfchemnitz (b Zwönitz);1;55;80
+1272;NDP;Dorfprozelten;1;55;100
+1460;TED;Edelfingen;1;22;153
+1466;MEDL;Edling;1;76;120
+1474;MEGF;Eggenfelden;1;38;120
+1474;MEGF;Eggenfelden;2;38;60
+8209;MEFM;Eggenfelden Mitte;1;55;120
+1477;MEGK;Egglkofen;1;35;125
+1477;MEGK;Egglkofen;2;38;60
+1490;FEGN;Ehringen;1;55;111
+1524;DED;Einsiedel;1;55;100
+1524;DED;Einsiedel;2;55;100
+8220;DEDH;Einsiedel Gymnasium;1;55;70
+1531;MEZT;Eisenärzt;1;55;100
+1559;TELP;Elpersheim;1;35;97
+1600;MEGH;Engertsham;1;38;60
+1629;DEA;Erdmannsdorf-Augustusburg;1;55;80
+1648;DERA;Erla;1;55;80
+1649;DERB;Erlabrunn (Erzgeb);1;55;80
+1656;NERL;Erlenbach am Main;1;55;150
+1661;FERH;Ernsthausen (Kr Frankenberg);1;55;101
+1745;DFBE;Fährbrücke;1;55;80
+1745;DFBE;Fährbrücke;2;55;80
+1750;DFU;Falkenau (Sachs);1;38;100
+1766;NFCH;Faulbach (Main);1;55;100
+1786;EFEU;Feudingen;1;38;121
+8221;DFLP;Flöha-Plaue;1;55;80
+1820;DFM;Floßmühle;1;55;80
+1837;MFOS;Forsting;1;76;120
+1841;FFRK;Frankenberg (Eder);1;55;114
+1841;FFRK;Frankenberg (Eder);2;55;101
+1841;FFRK;Frankenberg (Eder);3;55;101
+8302;FFRG;Frankenberg (Eder) Goßberg;1;55;101
+7512;FVI;Frankenberg (Eder) Viermünden;1;55;100
+7512;FVI;Frankenberg (Eder) Viermünden;2;55;100
+1920;NFM;Freudenberg-Kirschfurt;1;55;100
+1928;MFDF;Fridolfing;2;38;120
+1928;MFDF;Fridolfing;3;38;120
+1933;FFRD;Friedensdorf (Lahn);1;55;100
+1933;FFRD;Friedensdorf (Lahn);2;55;100
+1964;FFZ;Fritzlar;1;24;235
+1979;FFNW;Fürstenwald;1;38;111
+1982;MFZL;Fürstenzell;2;38;60
+1982;MFZL;Fürstenzell;3;38;60
+2004;TGAM;Gamburg;1;55;100
+2004;TGAM;Gamburg;2;55;97
+2010;MGA;Garching (Alz);1;35;179
+2010;MGA;Garching (Alz);2;35;131
+2010;MGA;Garching (Alz);3;35;167
+2015;MGS;Gars (Inn);1;38;120
+2041;MGHS;Geisenhausen;1;55;120
+2041;MGHS;Geisenhausen;2;38;61
+7547;MGND;Gendorf;1;55;120
+2137;NGLW;Glanzstoffwerke;1;55;150
+2205;FGOF;Goßfelden;1;38;110
+2396;DGRB;Grünhainichen-Borstendorf;1;55;100
+2404;DGS;Grünstädtel;3;25;75
+2481;RHAI;Hainstadt (Baden);1;17;68
+2567;DHST;Hartenstein;1;55;80
+2567;DHST;Hartenstein;2;55;80
+2578;NHCH;Hasloch am Main;1;55;100
+2612;MHEF;Hebertsfelden;1;38;120
+7549;MHEI;Heiligenstatt;1;55;120
+2690;DHRF;Hennersdorf (Sachs);11 01;55;80
+2690;DHRF;Hennersdorf (Sachs);11 02;55;80
+2754;DHZF;Hetzdorf (Flöhatal);1;38;100
+2754;DHZF;Hetzdorf (Flöhatal);3;38;60
+2801;THO;Hochhausen;1;25;103
+2845;DHOF;Hohenfichte;1;38;90
+2899;MHPF;Höpfling;1;38;110
+2918;MHPD;Hörpolding;2;38;60
+2918;MHPD;Hörpolding;3;38;60
+2940;MHUF;Hufschlag;1;38;50
+2968;TIH;Igersheim;1;55;100
+3052;MJEB;Jettenbach;1;38;120
+3059;DJ;Johanngeorgenstadt;1;55;120
+3059;DJ;Johanngeorgenstadt;2;55;120
+3059;DJ;Johanngeorgenstadt;3;55;120
+8222;MJUL;Julbach;1;55;220
+3116;MKH;Karpfham;2;38;125
+3128;MKAT;Kastl (Oberbay);1;55;150
+3128;MKAT;Kastl (Oberbay);2;55;150
+3137;UKH;Katzhütte;1;55;60
+3157;DKAU;Kemtau;1;55;80
+3182;MKAG;Kirchanschöring;1;38;120
+7550;MKW;Kirchweidach;1;35;120
+3250;NKLH;Kleinheubach;1;55;150
+3250;NKLH;Kleinheubach;502;55;150
+3262;NKT;Kleinwallstadt;1;55;150
+3262;NKT;Kleinwallstadt;2;38;84
+3270;NKM;Klingenberg am Main;1;55;150
+3270;NKM;Klingenberg am Main;2;55;150
+897;TBR;Kloster Bronnbach;1;55;100
+3371;FKOB;Korbach Hauptbahnhof;1;55;118
+3371;FKOB;Korbach Hauptbahnhof;2;55;166
+3371;FKOB;Korbach Hauptbahnhof;3;55;156
+3371;FKOB;Korbach Hauptbahnhof;4;55;120
+3372;FKBS;Korbach Süd;1;55;100
+7490;FKWB;Külte-Wetterburg;1;55;128
+8246;FLSR;Lahntal-Sarnau;1;55;100
+3514;MLAS;Landshut (Bay) Süd;1;55;120
+3577;NLK;Laudenbach am Main;1;55;150
+3579;TLC;Laudenbach (Württ);1;55;100
+3588;MLF;Laufen (Oberbay);1;38;120
+3588;MLF;Laufen (Oberbay);2;38;120
+3601;DLR;Lauter (Sachs);1;55;80
+3624;ELEI;Leimstruth;1;34;127
+3659;DRAU;Lengefeld-Rauenstein;1;55;80
+3678;DLEU;Leubsdorf (Sachs);1;38;100
+3702;ULIH;Lichtenhain a d Bergbahn;1;96;16,3
+3791;DLN;Lößnitz ob Bf;1;55;80
+3792;DLNU;Lößnitz unt Bf;1;55;80
+3921;FMAN;Mandern;1;55;115
+3948;DMG;Marienberg (Sachs);2;35;100
+3958;TMA;Markelsheim;1;30;156
+3958;TMA;Markelsheim;2;30;117
+3959;DMAR;Markersbach (Erzgeb);2;30;70
+3959;DMAR;Markersbach (Erzgeb);3;32;150
+3975;MMK;Marktl;1;35;220
+3975;MMK;Marktl;2;35;210
+3998;MMSG;Massing;1;55;120
+3998;MMSG;Massing;2;55;120
+4000;MMTZ;Matzing;1;35;60
+4030;DMS;Meinersdorf (Erzgeb);1;55;80
+4045;UMEL;Mellenbach-Glasbach;1;55;60
+4045;UMEL;Mellenbach-Glasbach;2;55;60
+7494;FMGH;Mengeringhausen;1;38;130
+4089;UMEU;Meuselbach-Schwarzmühle;1;55;60
+4110;NM;Miltenberg;1;38;193
+4110;NM;Miltenberg;2;38;302
+4110;NM;Miltenberg;3;38;143
+850;NBRE;Miltenberg-Breitendiel;1;55;100
+4137;MMIG;Mittergars;1;35;106
+4201;MMF;Mühldorf (Oberbay);1;55;304
+4201;MMF;Mühldorf (Oberbay);2;76;304
+4201;MMF;Mühldorf (Oberbay);3;76;304
+4201;MMF;Mühldorf (Oberbay);4;55;276
+4201;MMF;Mühldorf (Oberbay);5;55;276
+4201;MMF;Mühldorf (Oberbay);6;55;215
+4201;MMF;Mühldorf (Oberbay);7;55;215
+4272;FMHN;Münchhausen;1;55;101
+4272;FMHN;Münchhausen;2;55;101
+4339;DNGM;Nennigmühle;1;55;80
+4407;MNK;Neukirchen (Inn);1;38;54
+4417;MNR;Neumarkt-St. Veit;1;55;120
+4417;MNR;Neumarkt-St. Veit;2;55;120
+4417;MNR;Neumarkt-St. Veit;3;55;125
+4430;MNN;Neuötting;1;38;236
+4459;NNSP;Neustift (b Passau);1;35;60
+4530;TNI;Niederstetten;1;38;114
+4530;TNI;Niederstetten;2;28;121
+8224;DNZW;Niederzwönitz;1;55;70
+4556;TNK;Niklashausen;1;55;100
+4636;FOSN;Oberelsungen;1;38;112
+4668;NOE;Obernburg-Elsenfeld;1;55;150
+4668;NOE;Obernburg-Elsenfeld;2;35;195
+4668;NOE;Obernburg-Elsenfeld;3;35;195
+4669;EOBW;Oberndorf (Kr Wittgenstein);1;38;100
+4707;UOW;Oberweißbach-Deesbach;1;96;30
+4716;UOFM;Obstfelderschmiede;1;38;120
+4757;DOL;Olbernhau;1;55;100
+4757;DOL;Olbernhau;2;55;100
+8225;DOLW;Olbernhau West;1;55;80
+4758;DOGT;Olbernhau-Grünthal;1;55;100
+4833;MOTG;Otting;1;38;50
+4917;MPKI;Pfarrkirchen;2;38;126
+4917;MPKI;Pfarrkirchen;3;38;126
+8226;DSTM;Pockau Strobelmühle;1;55;50
+4972;DPF;Pockau-Lengefeld;1;55;100
+4972;DPF;Pockau-Lengefeld;2;55;100
+4973;MPKG;Pocking;2;55;135
+4973;MPKG;Pocking;3;55;120
+5109;MRMB;Ramerberg;1;35;96
+5124;DRAS;Raschau (b Schwarzenberg);1;24;80
+5195;TRL;Reicholzheim;1;55;100
+5196;DRF;Reifland-Wünschendorf;1;55;80
+5290;RRB;Rippberg;1;55;100
+5318;MROH;Rohrbach (Oberbay);1;38;100
+5318;MROH;Rohrbach (Oberbay);2;35;128
+8259;MROS;Rosenheim Hochschule;1;55;140
+5376;TRS;Rot am See;2;38;111
+5396;MRT;Rott (Inn);1;35;120
+5396;MRT;Rott (Inn);2;35;120
+5426;MRPD;Ruhpolding;2;55;140
+5427;MRUS;Ruhstorf;1;38;110
+5515;TSAT;Satteldorf;1;38;95
+5534;MSCA;Schalchen;1;35;93
+5539;ESCA;Schameder;1;28;102
+5543;DSS;Scharfenstein;1;38;80
+5551;MSC;Schechen;1;38;120
+5553;DSG;Scheibenberg;1;22;40
+5589;DSCL;Schlettau (Erzgeb);3;38;120
+5589;DSCL;Schlettau (Erzgeb);4;15;120
+5625;NSCB;Schneeberg im Odenwald;1;55;100
+5689;TSZG;Schrozberg;1;55;100
+5689;TSZG;Schrozberg;2;55;100
+5720;USCG;Schwarzburg;1;38;120
+5728;DSC;Schwarzenberg (Erzgeb);21 01;55;100
+5728;DSC;Schwarzenberg (Erzgeb);21 02;55;100
+5728;DSC;Schwarzenberg (Erzgeb);21 03;55;150
+5728;DSC;Schwarzenberg (Erzgeb);21 04;55;150
+5729;DSCH;Schwarzenberg (Erzgeb) Hp;1;27;95
+5730;DSCN;Schwarzenberg-Neuwelt;1;55;80
+5801;DSEH;Sehma;1;21;75
+5803;MSBD;Seiboldsdorf;1;55;100
+5845;MSGD;Siegsdorf;1;55;152
+5845;MSGD;Siegsdorf;2;38;106
+5858;DSBS;Silberstraße;1;55;80
+5858;DSBS;Silberstraße;2;55;80
+5859;MSBI;Simbach (Inn);1;55;220
+5859;MSBI;Simbach (Inn);2;38;222
+5859;MSBI;Simbach (Inn);3;38;222
+5862;FSMH;Simtshausen;1;55;101
+5874;USDF;Sitzendorf-Unterweißbach;1;55;60
+5874;USDF;Sitzendorf-Unterweißbach;2;55;60
+5914;MSY;Soyen;1;35;94
+5959;NSPO;Stadtprozelten;1;55;100
+5959;NSPO;Stadtprozelten;2;55;100
+5978;MSTN;Stein (Traun);1;38;53
+6000;MSHG;Steinhöring;1;76;120
+6000;MSHG;Steinhöring;2;76;120
+6022;FSZH;Sterzhausen;1;38;110
+6110;NSUZ;Sulzbach am Main;1;55;150
+6109;MSBH;Sulzbach (Inn);2;38;60
+6109;MSBH;Sulzbach (Inn);3;38;60
+6133;MTCH;Tacherting;1;55;60
+6152;TTB;Tauberbischofsheim;1;55;105
+6152;TTB;Tauberbischofsheim;3;55;106
+6187;DTAL;Thalheim (Erzgeb);1;55;100
+6187;DTAL;Thalheim (Erzgeb);3;55;80
+6196;DWIE;Thermalbad Wiesenbad;1;55;80
+6222;MWSL;Tittmoning-Wiesmühl;3;35;120
+6223;MTG;Töging (Inn);1;55;220
+6223;MTG;Töging (Inn);2;38;207
+6239;MTRD;Traundorf;1;38;110
+8127;MTRT;Traunreut;1;55;60
+8313;MTSK;Traunstein Klinikum;1;55;100
+6277;MTSB;Trostberg;2;35;153
+6277;MTSB;Trostberg;3;35;101
+6285;MTUL;Tulling;1;76;120
+6289;MTLG;Tüßling;1;55;151
+6289;MTLG;Tüßling;2;55;169
+6289;MTLG;Tüßling;3;55;151
+7511;FTW;Twiste;1;55;111
+6332;FUNG;Ungedanken;1;55;104
+6343;MUA;Unteraschau;1;35;49
+6381;FUS;Usseln;1;55;220
+6381;FUS;Usseln;2;55;220
+6420;MVSB;Vilsbiburg;1;55;120
+6420;MVSB;Vilsbiburg;2;55;120
+7473;FEDN;Vöhl Ederbringhausen;1;55;101
+7486;FHZN;Vöhl Herzhausen;1;55;101
+7508;FSLM;Vöhl Schmittlotheim;1;55;101
+8308;FTHA;Vöhl Thalitter;1;55;101
+6446;FVA;Volkmarsen;1;55;110
+6446;FVA;Volkmarsen;2;55;110
+6465;MWGN;Waging;1;55;60
+6488;DWK;Waldkirchen (Erzgeb);1;33;100
+7870;MWKG;Waldkraiburg-Kraiburg;1;38;98
+6505;RWDN;Walldürn;2;55;121
+6505;RWDN;Walldürn;3;55;150
+8269;TWAL;Wallhausen (Württ);1;55;100
+6524;DWF;Walthersdorf (Erzgeb);1;38;40
+6543;DWAB;Warmbad;1;38;80
+6559;MWSB;Wasserburg (Inn) Bahnhof;1;76;120
+6559;MWSB;Wasserburg (Inn) Bahnhof;2;55;139
+6559;MWSB;Wasserburg (Inn) Bahnhof;3;55;120
+6583;FWGA;Wega;1;35;74
+6583;FWGA;Wega;2;24;149
+6589;MWBH;Weibhausen;1;38;50
+6605;TWM;Weikersheim;1;26;142
+6605;TWM;Weikersheim;2;20;121
+6611;NWE;Weilbach in Unterfranken;1;55;100
+6698;TWT;Wertheim;1;55;100
+6698;TWT;Wertheim;2;55;100
+6698;TWT;Wertheim;3;55;100
+6699;TWTB;Wertheim-Bestenheid;1;55;100
+6727;FWT;Wetter (Hess-Nass);1;55;101
+6727;FWT;Wetter (Hess-Nass);2;55;101
+7121;DWIS;Wiesa (Erzgeb);1;55;80
+6753;DWSB;Wiesenburg (Sachs);1;55;80
+6753;DWSB;Wiesenburg (Sachs);2;55;80
+6754;FWIF;Wiesenfeld;1;55;138
+6760;MWSM;Wiesmühl (Alz);1;35;62
+6774;FWUE;Wilhelmshütte (Lahn);1;38;110
+6776;DWL;Wilischthal;1;55;80
+6777;DWI;Wilkau-Haßlau;1;55;100
+6777;DWI;Wilkau-Haßlau;2;55;100
+6778;FWLN;Willingen;1;55;220
+6778;FWLN;Willingen;2;55;220
+8232;FSY;Willingen-Stryck;1;35;148
+6841;DWIT;Witzschdorf;1;55;80
+6857;FWFH;Wolfhagen;1;55;110
+6857;FWFH;Wolfhagen;2;32;101
+6857;FWFH;Wolfhagen;4;38;110
+6869;DWO;Wolkenstein;13 01;55;100
+6869;DWO;Wolkenstein;13 02;55;100
+6892;NWOE;Wörth am Main;1;55;150
+6997;FZE;Zennern;1;38;176
+7018;FZB;Zierenberg;1;55;110
+7018;FZB;Zierenberg;2;55;110
+7018;FZB;Zierenberg;4;38;110
+8012;FZBR;Zierenberg-Rosental;1;55;120
+7038;DZB;Zöblitz-Pobershau;1;35;80
+7055;DZP;Zschopau;12 01;55;100
+7055;DZP;Zschopau;12 02;55;100
+8227;DZPO;Zschopau Ost;1;55;80
+7071;DZWS;Zwickau-Schedewitz;1;55;80
+7071;DZWS;Zwickau-Schedewitz;2;55;80
+7076;DZI;Zwönitz;1;55;80
