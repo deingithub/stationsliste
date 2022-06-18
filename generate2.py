@@ -86,7 +86,8 @@ def render_station_for_list(station, lang):
     ]:
         sub_html = f'<i>{lang["also"]} {", ".join(sub_names)}</i>'
 
-    return f"""<li><a lang="de" href="./details/{lang["lang"]}/{station_id(station)}.html">{station["name"]}</a>
+    return f"""<li id="{station_id(station)}">
+    <a lang="de" href="./details/{lang["lang"]}/{station_id(station)}.html">{station["name"]}</a>
     {sub_html}</li>"""
 
 

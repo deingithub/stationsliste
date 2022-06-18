@@ -126,14 +126,29 @@ LAYOUT_LINKLIST_PREFIX = Template(
     $linklist_hint_html
     <script>
         // poor person's htmx
-        onloadAdd( _ =>  any("li>a").on("click", async ev => {
+        onloadAdd(_ => any("li>a").on("click", async ev => {
             halt(ev);
             parent = me(ev.target.parentNode);
             parent.classAdd("loading");
             resp = await fetch(me(ev).pathname);
             parent.innerHTML = await resp.text();
+            if (window.location.hash == "#" + parent.id) {
+                parent.scrollIntoView();
+            } else {
+                history.pushState({}, '', "#" + parent.id);
+            }
             parent.classRemove("loading");
         }));
+        onloadAdd(_ => {
+            if (window.location.hash) {
+                me(
+                    "a",
+                    start=document.getElementById(
+                        window.location.hash.substring(1)
+                    )
+                ).trigger("click");
+            }
+        });
     </script>
     <form role=search>
             <label for="search-input">$searchlabel</label>
