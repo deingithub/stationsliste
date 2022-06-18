@@ -32,6 +32,7 @@ LANG = {
         "notrackinfo_html": "<p>Keine Informationen zu Bahnsteigen verfügbar, sorry.</p>",
         "also": "auch:",
         "linklist_hint_html": '<p>Um die Bahnhofsdetails zu sehen, einfach auf den Namen klicken. Eine Liste mit allen Details zu allen Bahnhöfen auf einmal ist auch verfügbar, aber sehr groß. Falls lange Lade- und Aufbauzeiten kein Problem sind, findet sich hier <a href="./complete.html">die vollständige Liste</a>.</p>',
+        "patches": "Durchgeführte Korrekturen",
     },
     "en": {
         "lang": "en",
@@ -64,6 +65,7 @@ LANG = {
         "notrackinfo_html": "<p>No information on tracks and platforms, sorry.</p>",
         "also": "also listed as:",
         "linklist_hint_html": """<p>Too see a station's details, simply click on its name. There's also a pre-expanded list with details for all stations available, but it's rather large. If long loading and rendering times aren't an issue, the  <a href="./complete.html">complete list</a> is available here, though with German text only.</p>""",
+        "patches": "Data includes these corrections",
     },
 }
 
@@ -96,8 +98,8 @@ LAYOUT_TOP = Template(
     label { display: block; }
     input { flex-grow: 1; min-width: 10ch; font-size: 1.2rem; padding: 0.5rem 0; }
     button { font-size: 1.2rem; }
-    main > ul li { list-style: none; margin: 1rem 0; }
-    main > ul { padding-left: 0; }
+    main > ul li { margin: 1rem 0; }
+    main > ul { list-style: none; padding-left: 0; }
     main > ul li section h2 { margin-top: 0; }
     li.loading::before {
 	display: block;

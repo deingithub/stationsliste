@@ -7,10 +7,7 @@ import itertools
 
 import extract2
 import layout2
-
-station_id = lambda station: station["bfnr"] or min(
-    [s["ibnr"] for s in station["subs"]]
-)
+from helpers import station_id
 
 
 def render_station(station, lang):
@@ -50,14 +47,12 @@ def render_station(station, lang):
     links_html += "</p>"
 
     platforms_html = ""
-    if platforms := db.execute(
-        "SELECT * FROM bahnsteigdaten WHERE bahnhofsnummer = ? ORDER BY bahnsteig, gleis",
-        (station["bfnr"],),
-    ).fetchall():
-        if platforms[0]["quelle"] == "rni":
+    if station["platforms"]:
+        if station["platforms"][0]["quelle"] == "rni":
             platforms_html += lang["rni_warn_html"]
         for platform, rows in itertools.groupby(
-            platforms, key=lambda row: row["bahnsteig"]
+            sorted(station["platforms"], key=lambda row: row["bahnsteig"]),
+            key=lambda row: row["bahnsteig"],
         ):
             platforms_html += f'<div class="platform"><h3><span class="invis">{lang["platform"]}</span> {platform}</h3>'
             for row in rows:
@@ -70,12 +65,20 @@ def render_station(station, lang):
     if not platforms_html:
         platforms_html = lang["notrackinfo_html"]
 
+    cite_html = ""
+    if station.get("_cite"):
+        cite_html += f'<h3 class="sm">{lang["patches"]}</h3><ul class="sm">'
+        for cite in station["_cite"]:
+            cite_html += f"<li>{cite}</li>"
+        cite_html += "</ul>"
+
     return f"""<section data-name="{station["name"]}">
         <h2 id="{station_id(station)}" lang="de"><a href="#{station_id(station)}">{station["name"]}</a></h2>
         {address_html}
         {links_html}
         {subs_html}
         {platforms_html}
+        {cite_html}
         </section>"""
 
 

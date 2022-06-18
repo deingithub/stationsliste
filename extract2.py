@@ -1,7 +1,7 @@
 import itertools
 import re
-
-deutsch_2_float = lambda x: float(x.strip().replace(",", "."))
+from helpers import deutsch_2_float
+from patch3 import patched
 
 
 def extract_stations(db):
@@ -170,4 +170,15 @@ def extract_stations(db):
             raise Exception(
                 "wow they managed to have a three-way broken dataset, implement this"
             )
+
+    for station in cleaned_stations_2:
+        station["platforms"] = [
+            dict(row)
+            for row in db.execute(
+                "SELECT * FROM bahnsteigdaten WHERE bahnhofsnummer = ? ORDER BY bahnsteig, gleis",
+                (station["bfnr"],),
+            ).fetchall()
+        ]
+        station = patched(station)
+
     return cleaned_stations_2

@@ -1,0 +1,13 @@
+{
+    "2545": {
+        "_delete": [
+            [
+                "platforms",
+                "i['gleis'] == '310'"
+            ]
+        ],
+        "_cite": [
+            "Gleis 310 entfernt, ist nirgendwo im Bahnhof ausgeschildert (Augenschein)"
+        ]
+    }
+}

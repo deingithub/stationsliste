@@ -17,3 +17,4 @@ Die dieser Seite zugrundeliegenden Datensätze [Haltestellendaten SuS 01/2020](h
 gehören der Deutschen Bahn und wurden allesamt von ihr freundlicherweise unter der Lizenz [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) frei zur Verfügung gestellt.
 
 Das Webinterface nutzt [surreal](https://github.com/gnat/surreal) für die interaktive Suche. Dieses ist hier mitgeliefert und unter der MIT-Lizenz verfügbar.
+
