@@ -5,7 +5,7 @@
 Aufbereitet aus einem… interessanten CSV-Format, bzw. fünf, denn die Informationen sind über fünf Dateien verteilt, alle mit unterschiedlichem Format.
 
 Das Skript `create_database.sh` lädt die momentan aktuellsten Daten (Anfang 2020, auch über zwei Jahre nach dem Anfang von 2020) herunter und importiert sie in `bahnhof.sqlite3`.
-Das Skript `generate_station_list.py <db_path>` konvertiert die Daten aus der sqlite-Datei in den `web/` Ordner als HTML auf Englisch und Deutsch.
+Das Skript `generate2.py <db_path>` konvertiert die Daten aus der sqlite-Datei in den `web/` Ordner als HTML auf Englisch und Deutsch, die Ordnerstruktur muss zuerst mit `mkdir -p web/details/{en,de}` vorbereitet werden.
 
 ## Lizenzen
 

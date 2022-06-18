@@ -14,18 +14,18 @@ sqlite3 bahnhof.sqlite3 <<EOF
 .import sus-stationsdaten-2020-03.csv sus_stationsdaten
 .import rni-stationsdaten-2020-04.csv rni_stationsdaten
 
-.import sus-haltestellen-2020.csv sus_haltestellen
+.import sus-haltestellen-2020.csv haltestellen
 
 .import sus-bahnsteigdaten-2020-03.csv sus_bahnsteigdaten
 .import rni-bahnsteigdaten-2020-04.csv rni_bahnsteigdaten
 
 /*
-	platform(bfnr,platform,track_name,length,height)
+	bahnsteigdaten(bahnhofsnummer, bahnsteig, gleis, laenge, hoehe)
 	RegioNetz-Datensatz hat einfach keine Bahnsteigangaben, deswegen dichten wir jedem Gleis seinen eigenen dazu.
 */
-CREATE VIEW platform(bfnr, platform, track_name, length, height)
-AS SELECT "Bahnhofsnummer", "Bahnsteig", "Gleisnummer", "Netto-baulänge (m)", "Höhe Bahnsteigkante (cm)""" FROM sus_bahnsteigdaten
-UNION SELECT "Bf-Nr", rowid, "Bahnsteig-Nr.", "NETTOLAENGE [m]", "HOEHE [cm]" FROM rni_bahnsteigdaten;
+CREATE VIEW bahnsteigdaten(quelle, bahnhofsnummer, bahnsteig, gleis, laenge, hoehe)
+AS SELECT "sus", "Bahnhofsnummer", "Bahnsteig", "Gleisnummer", "Netto-baulänge (m)", "Höhe Bahnsteigkante (cm)""" FROM sus_bahnsteigdaten
+UNION SELECT "rni", "Bf-Nr", rowid, "Bahnsteig-Nr.", "NETTOLAENGE [m]", "HOEHE [cm]" FROM rni_bahnsteigdaten;
 
 /*
 	stationsdaten(regionalbereich,bahnhofsnummer,name,ds100,kategorie,strasse,plz,ort,bundesland,aufgabentraeger)
@@ -33,8 +33,11 @@ UNION SELECT "Bf-Nr", rowid, "Bahnsteig-Nr.", "NETTOLAENGE [m]", "HOEHE [cm]" FR
 	Die gemeinsamen Spalten von sus_stationsdaten und rni_stationsdaten.
 */
 
-CREATE VIEW stationsdaten(regionalbereich, bahnhofsnummer, name, ds100, kategorie, strasse, plz, ort, bundesland, aufgabentraeger)
-AS SELECT "RB", "Bf. Nr.", "Station", "Bf DS 100Abk.", "Kat. Vst", "Straße", "PLZ", "Ort", "Bundesland", "Aufgabenträger" FROM sus_stationsdaten
-UNION SELECT "Regionalbereich", "Bf. Nr.", "Station", "Bf DS 100 Abk.", "Kategorie Vst", "Straße", "PLZ", "Ort", "Bundesland", "Aufgabenträger" FROM rni_stationsdaten;
+CREATE VIEW stationsdaten(quelle, regionalbereich, bahnhofsnummer, name, ds100, kategorie, strasse, plz, ort, bundesland, aufgabentraeger)
+AS SELECT "sus", "RB", "Bf. Nr.", "Station", "Bf DS 100Abk.", "Kat. Vst", "Straße", "PLZ", "Ort", "Bundesland", "Aufgabenträger" FROM sus_stationsdaten
+UNION SELECT "rni", "Regionalbereich", "Bf. Nr.", "Station", "Bf DS 100 Abk.", "Kategorie Vst", "Straße", "PLZ", "Ort", "Bundesland", "Aufgabenträger" FROM rni_stationsdaten;
+
+CREATE VIEW bfnr_nichtinstationsdaten AS SELECT bahnhofsnummer from stationsdaten except select Betreiber_Nr from haltestellen;
+
 
 EOF

@@ -1,1 +1,3 @@
 web/*.html
+web/details/{de,en}/*.html
+__pycache__
