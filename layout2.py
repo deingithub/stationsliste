@@ -13,9 +13,10 @@ LANG = {
 			<p>Die grauen Balken mit den Gleisnummern drauf sind die gemeinsamen Bahnsteige. <strong>Achtung:</strong> Gelegentlich haben Bahnsteige mehr als zwei Gleise (z.B. zwei durchgehende Gleise und ein Kopfgleis). Das Kopfgleis landet dann in Einzelfällen hier auf der Seite in einem neuen Bahnsteig, obwohl es in echt auf demselben ist. Das ist schon in den Daten der DB so falsch eingetragen und müsste für jeden bestätigten Fall manuell korrigiert werden.</p>""",
         "searchlabel": "Suche nach Stationen",
         "searchbutton": "Suchen",
-        "resetbutton": "Zurücksetzen",
+        "resetbutton": "Löschen",
         "attributionbased": "Auf Basis von DB Open Data (CC BY 4.0):",
         "and": "und",
+        "github": """Der Quelltext dieser Seiten ist auf <a href="https://github.com/deingithub/stationsliste">Github</a> einsehbar.""",
         "me_html": """Diese inoffizielle Seite ohne Zusammenhang mit der DB wird Ihnen präsentiert von <span style="font-variant: small-caps;">Cass</span> Dingenskirchen, 2022. All rites reversed.</p>""",
         "ds100": "DS100-Kürzel",
         "kategorie": "Preisklasse",
@@ -47,6 +48,7 @@ LANG = {
         "resetbutton": "Reset",
         "attributionbased": "Based on DB Open Data (CC BY 4.0):",
         "and": "and",
+        "github": """This site's source is available on <a href="https://github.com/deingithub/stationsliste">Github</a>.""",
         "me_html": """This unofficial third-party site is brought to you by <span style="font-variant: small-caps;">Cass</span> Dingenskirchen, 2022. All rites reversed.</p>""",
         "ds100": "DS100",
         "kategorie": "Category",
@@ -92,8 +94,8 @@ LAYOUT_TOP = Template(
     .sm { font-size: .8rem; }
     .invis, section em span { width: 1px; height: 1px; top: -900rem; position: absolute; display: block; }
     label { display: block; }
-    input { width: 35ch; font-size: 1.2rem; padding: 0.5rem 0; }
-    button { width: 10ch; font-size: 1.2rem; }
+    input { flex-grow: 1; min-width: 10ch; font-size: 1.2rem; padding: 0.5rem 0; }
+    button { font-size: 1.2rem; }
     main > ul li { list-style: none; margin: 1rem 0; }
     main > ul { padding-left: 0; }
     main > ul li section h2 { margin-top: 0; }
@@ -107,7 +109,12 @@ LAYOUT_TOP = Template(
 	text-align: center;
 	font-size: 1.5rem;
 	line-height: 2;
+	max-width: calc( 100vw - 2rem );
 }
+    @media screen and (max-width: 80ch) {
+        body > main { max-width: unset; margin: 0 0.5rem;}
+        body { overflow-x: hidden;}
+    }
     </style>
 </head>
 <body>
@@ -185,5 +192,5 @@ LAYOUT_LINKLIST_PREFIX = Template(
 LAYOUT_LINKLIST_SUFFIX = "</ul>"
 
 LAYOUT_BOTTOM = Template(
-    """<p id="attribution">$attributionbased <a href="https://data.deutschebahn.com/dataset/data-haltestellen.html">Haltestellendaten SuS 01/2020</a>, <a href="https://data.deutschebahn.com/dataset/data-stationsdaten.html">Stationsdaten SuS 03/2020</a>, <a href="https://data.deutschebahn.com/dataset/data-stationsdaten-regio.html">Haltestellendaten RNI 04/2020</a>, <a href="https://data.deutschebahn.com/dataset/data-bahnsteig.html">Bahnsteigdaten SuS 03/2020</a> $and <a href="https://data.deutschebahn.com/dataset/data-bahnsteig-regio.html">Bahnsteigdaten RNI 04/2020</a>. $me_html</main></body></html>"""
+    """<p id="attribution">$attributionbased <a href="https://data.deutschebahn.com/dataset/data-haltestellen.html">Haltestellendaten SuS 01/2020</a>, <a href="https://data.deutschebahn.com/dataset/data-stationsdaten.html">Stationsdaten SuS 03/2020</a>, <a href="https://data.deutschebahn.com/dataset/data-stationsdaten-regio.html">Haltestellendaten RNI 04/2020</a>, <a href="https://data.deutschebahn.com/dataset/data-bahnsteig.html">Bahnsteigdaten SuS 03/2020</a> $and <a href="https://data.deutschebahn.com/dataset/data-bahnsteig-regio.html">Bahnsteigdaten RNI 04/2020</a>. $github $me_html</main></body></html>"""
 )
