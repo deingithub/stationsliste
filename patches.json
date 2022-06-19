@@ -1,13 +1,68 @@
 {
     "2545": {
         "_delete": [
-            [
-                "platforms",
-                "i['gleis'] == '310'"
-            ]
+            ["platforms", "i['gleis'] == '310'"]
         ],
         "_cite": [
             "Gleis 310 entfernt, ist nirgendwo im Bahnhof ausgeschildert (Augenschein)"
+        ]
+    },
+    "145": {
+        "name": "Hannover Anderten-Misburg",
+        "_cite": [
+            "Stationsname geändert auf Hannover Anderten-Misburg wie auf Schildern (Augenschein)"
+        ]
+    },
+    "8001842": {
+        "_add": [
+            ["platforms", {"quelle": "osm", "bahnsteig": "B01", "gleis": "1", "laenge": "?", "hoehe": "?" }],
+            ["platforms", {"quelle": "osm", "bahnsteig": "B02", "gleis": "2", "laenge": "?", "hoehe": "?" }]
+        ],
+        "_cite": ["Bahnsteige hinzugefügt (OpenStreetMap)"]
+    },
+    "8003141": {
+        "_add": [
+            ["platforms", {"quelle": "osm", "bahnsteig": "B01", "gleis": "1", "laenge": "?", "hoehe": "96" }]
+        ],
+        "_cite": ["Bahnsteig hinzugefügt (OpenStreetMap)"]
+    },
+    "8000430": {
+        "_add": [
+            ["platforms", {"quelle": "osm", "bahnsteig": "B01", "gleis": "1", "laenge": "?", "hoehe": "96" }],
+            ["platforms", {"quelle": "osm", "bahnsteig": "B01", "gleis": "2", "laenge": "?", "hoehe": "96" }]
+        ],
+        "_cite": ["Bahnsteig hinzugefügt (OpenStreetMap)"]
+    },
+    "8000438": {
+        "_add": [
+            ["platforms", {"quelle": "osm", "bahnsteig": "B01", "gleis": "1", "laenge": "?", "hoehe": "96" }],
+            ["platforms", {"quelle": "osm", "bahnsteig": "B02", "gleis": "2", "laenge": "?", "hoehe": "96" }]
+        ],
+        "_cite": ["Bahnsteige hinzugefügt (OpenStreetMap)"]
+    },
+    "8004005": {
+        "_add": [
+            ["platforms", {"quelle": "osm", "bahnsteig": "B01", "gleis": "1", "laenge": "?", "hoehe": "96" }],
+            ["platforms", {"quelle": "osm", "bahnsteig": "B02", "gleis": "2", "laenge": "?", "hoehe": "96" }]
+        ],
+        "_cite": ["Bahnsteige hinzugefügt (OpenStreetMap)"]
+    },
+    "8004213": {
+        "_add": [
+            ["platforms", {"quelle": "osm", "bahnsteig": "B01", "gleis": "1", "laenge": "?", "hoehe": "?" }],
+            ["platforms", {"quelle": "osm", "bahnsteig": "B02", "gleis": "2", "laenge": "?", "hoehe": "?" }]
+        ],
+        "_cite": ["Bahnsteige hinzugefügt (OpenStreetMap)"]
+    },
+    "155": {
+        "strasse": "Bahnhofsplatz 1",
+        "_modify": [
+            ["platforms", "i['gleis'] == '14 01'", "i | {'quelle': 'osm', 'gleis': '1', 'bahnsteig': 'B01'}"],
+            ["platforms", "i['gleis'] == '14 02'", "i | {'quelle': 'osm', 'gleis': '2', 'bahnsteig': 'B01'}"]
+        ],
+        "_cite": [
+            "Hausnummer eingetragen (OpenStreetMap)",
+            "Bahnsteige korrigiert (OpenStreetMap)"
         ]
     }
 }
