@@ -90,7 +90,7 @@ LAYOUT_TOP = Template(
     .platform { background-color: #aaa; padding: .5rem; margin: 0.5rem 0; border: 1px solid gray; }
     .platform p em { background: #302a57; color: white; height: 2rem; min-width: 2rem; vertical-align: middle; text-align: right; display: inline-block; padding: 0 .3ch; box-sizing: border-box; font-style: normal; font-weight: bold; line-height: 1.25; font-size: 1.5rem; }
     .platform h3 { font-size: 3rem; float: right; line-height: 1; margin: 0; color: #666; }
-    .button-row a { padding: .5rem; display: inline-block; background-color: #efb435; color: #302a57; font-weight: bold; text-decoration: none; }
+    .button-row a { padding: .5rem; display: inline-block; background-color: #efb435; color: #302a57; font-weight: bold; text-decoration: none; margin-bottom: 0.3rem; }
     .button-row a:hover, .button-row a:focus { box-shadow: 3px 3px #302a57; }
     .hide { display: none; }
     .sm { font-size: .8rem; }

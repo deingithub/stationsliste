@@ -38,8 +38,10 @@ def render_station(station, lang):
     links_html = (
         '<p class="button-row">'
         f'<a href="https://dbf.finalrewind.org/{station["name"]}">db-infoscreen</a>'
-        f' <a href="https://www.bahnhof.de/service/search/bahnhof-de/520608?query={station["name"]}">bahnhof.de</a>'
     )
+
+    if station["subs"][0]["betreiber_name"] == "DB Station und Service AG":
+        links_html += f' <a href="https://www.bahnhof.de/service/search/bahnhof-de/520608?query={station["name"]}">bahnhof.de</a>'
 
     if station["subs"][0]["lat"] and station["subs"][0]["lon"]:
         links_html += f' <a href="https://www.openstreetmap.org/#map=17/{sub["lat"]}/{sub["lon"]}">OpenStreetMap</a>'
