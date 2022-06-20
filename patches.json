@@ -64,5 +64,15 @@
             "Hausnummer eingetragen (OpenStreetMap)",
             "Bahnsteige korrigiert (OpenStreetMap)"
         ]
+    },
+    "8218": {
+        "name": "Biedenkopf Wirtschafts- und Wissenschaftscampus",
+        "_modify": [
+            ["platforms", "i['gleis'] == '1'", "i | {'quelle': 'osm'}"]
+        ],
+        "_cite": [
+            "Name vervollständigt wie auf Schildern, Online-Schreibweise als Alternative beibehalten (Augenschein)",
+            "Nur ein Bahnsteig, RNI-Warnung entfernt"
+        ]
     }
 }
