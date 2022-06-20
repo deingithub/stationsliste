@@ -16,6 +16,20 @@ def render_station(station, lang):
         address_html = f'<address>{station["strasse"]}, {station["plz"]} {station["ort"]} ({station["bundesland"]})</address>'
 
     subs_html = ""
+
+    if station["kategorie"] or station["aufgabentraeger"]:
+        subs_html += '<p class="sm">'
+
+        subs_html += " | ".join(
+            [
+                f"<b>{lang[key]}</b> {station[key]}"
+                for key in ("kategorie", "aufgabentraeger")
+                if station[key]
+            ]
+        )
+
+        subs_html += "</p>"
+
     for i, sub in enumerate(station["subs"]):
         subs_html += '<p class="sm">'
 

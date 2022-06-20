@@ -20,6 +20,7 @@ LANG = {
         "me_html": """Diese inoffizielle Seite ohne Zusammenhang mit der DB wird Ihnen präsentiert von <span style="font-variant: small-caps;">Cass</span> Dingenskirchen, 2022. All rites reversed.</p>""",
         "ds100": "DS100-Kürzel",
         "kategorie": "Preisklasse",
+        "aufgabentraeger": "Aufgabenträger",
         "ifopt": "IFOPT",
         "ibnr": "IBNR",
         "verkehr": "Verkehr",
@@ -53,9 +54,10 @@ LANG = {
         "me_html": """This unofficial third-party site is brought to you by <span style="font-variant: small-caps;">Cass</span> Dingenskirchen, 2022. All rites reversed.</p>""",
         "ds100": "DS100",
         "kategorie": "Category",
+        "aufgabentraeger": "Authority",
         "ifopt": "IFOPT",
         "ibnr": "IBNR",
-        "verkehr": "Distance",
+        "verkehr": "Served by",
         "betreiber_name": "Operator",
         "rni_warn_html": "<p>DB RegioNetz station: No data about which platforms are shared.</p>",
         "platform": "Platform",
@@ -98,9 +100,9 @@ LAYOUT_TOP = Template(
     label { display: block; }
     input { flex-grow: 1; min-width: 10ch; font-size: 1.2rem; padding: 0.5rem 0; }
     button { font-size: 1.2rem; }
-    main > ul li { margin: 1rem 0; }
+    main > ul > li { margin: 1rem 0; }
     main > ul { list-style: none; padding-left: 0; }
-    main > ul li section h2 { margin-top: 0; }
+    main > ul > li section h2 { margin-top: 0; }
     li.loading::before {
 	display: block;
 	width: calc( 70ch / 1.5 );
