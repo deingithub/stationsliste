@@ -15,44 +15,73 @@
     },
     "8001842": {
         "_add": [
-            ["platforms", {"quelle": "osm", "bahnsteig": "B01", "gleis": "1", "laenge": "?", "hoehe": "?" }],
-            ["platforms", {"quelle": "osm", "bahnsteig": "B02", "gleis": "2", "laenge": "?", "hoehe": "?" }]
+            ["platforms", {"quelle": "", "bahnsteig": "B01", "gleis": "1", "laenge": "75", "hoehe": "96" }],
+            ["platforms", {"quelle": "", "bahnsteig": "B02", "gleis": "2", "laenge": "75", "hoehe": "96" }]
         ],
-        "_cite": ["Bahnsteige hinzugefügt (OpenStreetMap)"]
+        "_cite": [
+            "Bahnsteige hinzugefügt (<a href=\"https://web.archive.org/web/20220621172547/https://regiobahn.de/regiobahn-infrastruktur/infrastruktur/verkehrsstationen/haltepunkte-bahnhoefe-mettmann\">REGIOBAHN Infrastruktur Haltepunkte & Bahnhöfe Mettmann</a>)"
+        ]
     },
     "8003141": {
         "_add": [
-            ["platforms", {"quelle": "osm", "bahnsteig": "B01", "gleis": "1", "laenge": "?", "hoehe": "96" }]
+            ["platforms", {"quelle": "", "bahnsteig": "B01", "gleis": "1", "laenge": "75", "hoehe": "96" }]
         ],
-        "_cite": ["Bahnsteig hinzugefügt (OpenStreetMap)"]
+        "_cite": [
+            "Bahnsteig hinzugefügt (<a href=\"https://web.archive.org/web/20220621172908/https://regiobahn.de/regiobahn-infrastruktur/infrastruktur/verkehrsstationen/haltepunkte-bahnhoefe-kaarst\">REGIOBAHN Infrastruktur Haltepunkte & Bahnhöfe Kaarst</a>)"
+        ]
     },
     "8000430": {
         "_add": [
-            ["platforms", {"quelle": "osm", "bahnsteig": "B01", "gleis": "1", "laenge": "?", "hoehe": "96" }],
-            ["platforms", {"quelle": "osm", "bahnsteig": "B01", "gleis": "2", "laenge": "?", "hoehe": "96" }]
+            ["platforms", {"quelle": "", "bahnsteig": "B01", "gleis": "1", "laenge": "75", "hoehe": "96" }],
+            ["platforms", {"quelle": "", "bahnsteig": "B01", "gleis": "2", "laenge": "75", "hoehe": "96" }]
         ],
-        "_cite": ["Bahnsteig hinzugefügt (OpenStreetMap)"]
+        "_cite": [
+            "Bahnsteig hinzugefügt (<a href=\"https://web.archive.org/web/20220621172908/https://regiobahn.de/regiobahn-infrastruktur/infrastruktur/verkehrsstationen/haltepunkte-bahnhoefe-kaarst\">REGIOBAHN Infrastruktur Haltepunkte & Bahnhöfe Kaarst</a>)"
+        ]
+    },
+    "8000432": {
+        "_add": [
+            ["platforms", {"quelle": "", "bahnsteig": "B01", "gleis": "1", "laenge": "75", "hoehe": "96" }]
+        ],
+        "_cite": [
+            "Bahnsteig hinzugefügt (<a href=\"https://web.archive.org/web/20220621172908/https://regiobahn.de/regiobahn-infrastruktur/infrastruktur/verkehrsstationen/haltepunkte-bahnhoefe-kaarst\">REGIOBAHN Infrastruktur Haltepunkte & Bahnhöfe Kaarst</a>)"
+        ]
     },
     "8000438": {
         "_add": [
-            ["platforms", {"quelle": "osm", "bahnsteig": "B01", "gleis": "1", "laenge": "?", "hoehe": "96" }],
-            ["platforms", {"quelle": "osm", "bahnsteig": "B02", "gleis": "2", "laenge": "?", "hoehe": "96" }]
+            ["platforms", {"quelle": "", "bahnsteig": "B01", "gleis": "1", "laenge": "75", "hoehe": "96" }],
+            ["platforms", {"quelle": "", "bahnsteig": "B02", "gleis": "2", "laenge": "75", "hoehe": "96" }]
         ],
-        "_cite": ["Bahnsteige hinzugefügt (OpenStreetMap)"]
+        "_cite": [
+            "Bahnsteige hinzugefügt (<a href=\"https://web.archive.org/web/20220621172908/https://regiobahn.de/regiobahn-infrastruktur/infrastruktur/verkehrsstationen/haltepunkte-bahnhoefe-kaarst\">REGIOBAHN Infrastruktur Haltepunkte & Bahnhöfe Kaarst</a>)"
+        ]
     },
     "8004005": {
         "_add": [
-            ["platforms", {"quelle": "osm", "bahnsteig": "B01", "gleis": "1", "laenge": "?", "hoehe": "96" }],
-            ["platforms", {"quelle": "osm", "bahnsteig": "B02", "gleis": "2", "laenge": "?", "hoehe": "96" }]
+            ["platforms", {"quelle": "", "bahnsteig": "B01", "gleis": "1", "laenge": "75", "hoehe": "96" }],
+            ["platforms", {"quelle": "", "bahnsteig": "B02", "gleis": "2", "laenge": "75", "hoehe": "96" }]
         ],
-        "_cite": ["Bahnsteige hinzugefügt (OpenStreetMap)"]
+        "_cite": [
+            "Bahnsteige hinzugefügt (<a href=\"https://web.archive.org/web/20220621172547/https://regiobahn.de/regiobahn-infrastruktur/infrastruktur/verkehrsstationen/haltepunkte-bahnhoefe-mettmann\">REGIOBAHN Infrastruktur Haltepunkte & Bahnhöfe Mettmann</a>)"
+        ]
+    },
+    "8004007": {
+        "_add": [
+            ["platforms", {"quelle": "", "bahnsteig": "B01", "gleis": "1", "laenge": "75", "hoehe": "96" }],
+            ["platforms", {"quelle": "", "bahnsteig": "B02", "gleis": "2", "laenge": "75", "hoehe": "96" }]
+        ],
+        "_cite": [
+            "Bahnsteige hinzugefügt (<a href=\"https://web.archive.org/web/20220621172547/https://regiobahn.de/regiobahn-infrastruktur/infrastruktur/verkehrsstationen/haltepunkte-bahnhoefe-mettmann\">REGIOBAHN Infrastruktur Haltepunkte & Bahnhöfe Mettmann</a>)"
+        ]
     },
     "8004213": {
         "_add": [
-            ["platforms", {"quelle": "osm", "bahnsteig": "B01", "gleis": "1", "laenge": "?", "hoehe": "?" }],
-            ["platforms", {"quelle": "osm", "bahnsteig": "B02", "gleis": "2", "laenge": "?", "hoehe": "?" }]
+            ["platforms", {"quelle": "", "bahnsteig": "B01", "gleis": "1", "laenge": "75", "hoehe": "96" }],
+            ["platforms", {"quelle": "", "bahnsteig": "B02", "gleis": "2", "laenge": "75", "hoehe": "96" }]
         ],
-        "_cite": ["Bahnsteige hinzugefügt (OpenStreetMap)"]
+        "_cite": [
+            "Bahnsteige hinzugefügt (<a href=\"https://web.archive.org/web/20220621172547/https://regiobahn.de/regiobahn-infrastruktur/infrastruktur/verkehrsstationen/haltepunkte-bahnhoefe-mettmann\">REGIOBAHN Infrastruktur Haltepunkte & Bahnhöfe Mettmann</a>)"
+        ]
     },
     "155": {
         "strasse": "Bahnhofsplatz 1",
@@ -67,12 +96,18 @@
     },
     "8218": {
         "name": "Biedenkopf Wirtschafts- und Wissenschaftscampus",
-        "_modify": [
-            ["platforms", "i['gleis'] == '1'", "i | {'quelle': 'osm'}"]
+        "_cite": [
+            "Name vervollständigt wie auf Schildern, Online-Schreibweise als Alternative beibehalten (Augenschein)"
+        ]
+    },
+    "6037": {
+        "_add": [
+            ["platforms", {"quelle": "osm", "bahnsteig": "A01", "gleis": "27", "laenge": "75", "hoehe": "76" }],
+            ["platforms", {"quelle": "osm", "bahnsteig": "C01", "gleis": "43", "laenge": "230", "hoehe": "76" }],
+            ["platforms", {"quelle": "osm", "bahnsteig": "C01", "gleis": "44", "laenge": "120", "hoehe": "76" }]
         ],
         "_cite": [
-            "Name vervollständigt wie auf Schildern, Online-Schreibweise als Alternative beibehalten (Augenschein)",
-            "Nur ein Bahnsteig, RNI-Warnung entfernt"
+            "EVS-Bahnsteige hinzugefügt (<a href=\"https://web.archive.org/web/20210507044949/https://www.evs-online.com/File/Infrastrukturbeschreibung_Fplj2022_Stand2020_0817.pdf\">Infrastrukturbeschreibung EVS 2022</a>)"
         ]
     }
 }
