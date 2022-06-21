@@ -64,7 +64,7 @@ def render_station(station, lang):
 
     platforms_html = ""
     if station["platforms"]:
-        if station["platforms"][0]["quelle"] == "rni":
+        if station["platforms"][0]["quelle"] == "rni" and len(station["platforms"]) > 1:
             platforms_html += lang["rni_warn_html"]
         for platform, rows in itertools.groupby(
             sorted(station["platforms"], key=lambda row: row["bahnsteig"]),
