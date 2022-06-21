@@ -86,8 +86,8 @@ LAYOUT_TOP = Template(
     <style>
     body { background-color: #eee; }
     main { max-width: 70ch; margin: 0 auto; font-family: 'TeX Gyre Heros', 'Futura', 'Arial', sans-serif;; }
-    section h2, main > ul li > a { font-size: 1.5rem; font-weight: bold; display: block; background-color: #302a57; padding: .5rem 1rem .5rem .5rem; margin-bottom: 0; }
-    section h2 a, main > ul li > a { color: white; text-decoration: none; }
+    section h2, main > ul > li > a { font-size: 1.5rem; font-weight: bold; display: block; background-color: #302a57; padding: .5rem 1rem .5rem .5rem; margin-bottom: 0; }
+    section h2 a, main > ul > li > a { color: white; text-decoration: none; }
     address { margin-bottom: 0.75rem; }
     .platform { background-color: #aaa; padding: .5rem; margin: 0.5rem 0; border: 1px solid gray; }
     .platform p em { background: #302a57; color: white; height: 2rem; min-width: 2rem; vertical-align: middle; text-align: right; display: inline-block; padding: 0 .3ch; box-sizing: border-box; font-style: normal; font-weight: bold; line-height: 1.25; font-size: 1.5rem; }
