@@ -1,3 +1,4 @@
 web/*.html
 web/details/*
 __pycache__
+bahnhof.sqlite3

@@ -4,10 +4,14 @@ import sqlite3
 import argparse
 import locale
 import itertools
+import string
+import random
 
 import extract2
 import layout2
 from helpers import station_id
+
+CACHEBUST = "".join(random.choices(string.ascii_letters, k=10))
 
 
 def render_station(station, lang):
@@ -106,7 +110,7 @@ def render_station_for_list(station, lang):
         sub_html = f'<i>{lang["also"]} {", ".join(sub_names)}</i>'
 
     return f"""<li id="{station_id(station)}">
-    <a lang="de" href="./details/{lang["lang"]}/{station_id(station)}.html">{station["name"]}</a>
+    <a lang="de" href="./details/{lang["lang"]}/{station_id(station)}.html?{CACHEBUST}">{station["name"]}</a>
     {sub_html}</li>"""
 
 
