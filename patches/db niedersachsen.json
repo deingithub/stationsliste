@@ -1,0 +1,23 @@
+{
+    "2545": {
+    	"_": "Hannover Hbf",
+        "_delete": [
+            ["platforms", "i['gleis'] == '310'"]
+        ],
+        "_cite": [
+            "Gleis 310 entfernt, ist nirgendwo im Bahnhof ausgeschildert (Augenschein)"
+        ]
+    },
+    "145": {
+        "name": "Hannover Anderten-Misburg",
+        "_cite": [
+            "Stationsname geändert wie auf Schildern (Augenschein)"
+        ]
+    },
+    "1036": {
+        "name": "Celle",
+        "_cite": [
+            "Name geändert wie auf Schildern (Augenschein)"
+        ]
+    }
+}

@@ -1,19 +1,6 @@
 {
-    "2545": {
-        "_delete": [
-            ["platforms", "i['gleis'] == '310'"]
-        ],
-        "_cite": [
-            "Gleis 310 entfernt, ist nirgendwo im Bahnhof ausgeschildert (Augenschein)"
-        ]
-    },
-    "145": {
-        "name": "Hannover Anderten-Misburg",
-        "_cite": [
-            "Stationsname geändert auf Hannover Anderten-Misburg wie auf Schildern (Augenschein)"
-        ]
-    },
     "8001842": {
+        "_": "Erkrath-Nord", 
         "_add": [
             ["platforms", {"quelle": "", "bahnsteig": "B01", "gleis": "1", "laenge": "75", "hoehe": "96" }],
             ["platforms", {"quelle": "", "bahnsteig": "B02", "gleis": "2", "laenge": "75", "hoehe": "96" }]
@@ -23,6 +10,7 @@
         ]
     },
     "8003141": {
+        "_": "Kaarster Bahnhof",
         "_add": [
             ["platforms", {"quelle": "", "bahnsteig": "B01", "gleis": "1", "laenge": "75", "hoehe": "96" }]
         ],
@@ -31,6 +19,7 @@
         ]
     },
     "8000430": {
+        "_": "Kaarster See",
         "_add": [
             ["platforms", {"quelle": "", "bahnsteig": "B01", "gleis": "1", "laenge": "75", "hoehe": "96" }],
             ["platforms", {"quelle": "", "bahnsteig": "B01", "gleis": "2", "laenge": "75", "hoehe": "96" }]
@@ -40,6 +29,7 @@
         ]
     },
     "8000432": {
+        "_": "Kaarst Mitte/Holzbüttgen", 
         "_add": [
             ["platforms", {"quelle": "", "bahnsteig": "B01", "gleis": "1", "laenge": "75", "hoehe": "96" }]
         ],
@@ -48,6 +38,7 @@
         ]
     },
     "8000438": {
+        "_": "Kaarst IKEA",
         "_add": [
             ["platforms", {"quelle": "", "bahnsteig": "B01", "gleis": "1", "laenge": "75", "hoehe": "96" }],
             ["platforms", {"quelle": "", "bahnsteig": "B02", "gleis": "2", "laenge": "75", "hoehe": "96" }]
@@ -57,6 +48,7 @@
         ]
     },
     "8004005": {
+        "_": "Mettmann Stadtwald",
         "_add": [
             ["platforms", {"quelle": "", "bahnsteig": "B01", "gleis": "1", "laenge": "75", "hoehe": "96" }],
             ["platforms", {"quelle": "", "bahnsteig": "B02", "gleis": "2", "laenge": "75", "hoehe": "96" }]
@@ -66,6 +58,7 @@
         ]
     },
     "8004007": {
+        "_": "Mettmann Zentrum",
         "_add": [
             ["platforms", {"quelle": "", "bahnsteig": "B01", "gleis": "1", "laenge": "75", "hoehe": "96" }],
             ["platforms", {"quelle": "", "bahnsteig": "B02", "gleis": "2", "laenge": "75", "hoehe": "96" }]
@@ -75,39 +68,13 @@
         ]
     },
     "8004213": {
+        "_": "Neanderthal",
         "_add": [
             ["platforms", {"quelle": "", "bahnsteig": "B01", "gleis": "1", "laenge": "75", "hoehe": "96" }],
             ["platforms", {"quelle": "", "bahnsteig": "B02", "gleis": "2", "laenge": "75", "hoehe": "96" }]
         ],
         "_cite": [
             "Bahnsteige hinzugefügt (<a href=\"https://web.archive.org/web/20220621172547/https://regiobahn.de/regiobahn-infrastruktur/infrastruktur/verkehrsstationen/haltepunkte-bahnhoefe-mettmann\">REGIOBAHN Infrastruktur Haltepunkte & Bahnhöfe Mettmann</a>)"
-        ]
-    },
-    "155": {
-        "strasse": "Bahnhofsplatz 1",
-        "_modify": [
-            ["platforms", "i['gleis'] == '14 01'", "i | {'quelle': 'osm', 'gleis': '1', 'bahnsteig': 'B01'}"],
-            ["platforms", "i['gleis'] == '14 02'", "i | {'quelle': 'osm', 'gleis': '2', 'bahnsteig': 'B01'}"]
-        ],
-        "_cite": [
-            "Hausnummer eingetragen (OpenStreetMap)",
-            "Bahnsteige korrigiert (OpenStreetMap)"
-        ]
-    },
-    "8218": {
-        "name": "Biedenkopf Wirtschafts- und Wissenschaftscampus",
-        "_cite": [
-            "Name vervollständigt wie auf Schildern, Online-Schreibweise als Alternative beibehalten (Augenschein)"
-        ]
-    },
-    "6037": {
-        "_add": [
-            ["platforms", {"quelle": "osm", "bahnsteig": "A01", "gleis": "27", "laenge": "75", "hoehe": "76" }],
-            ["platforms", {"quelle": "osm", "bahnsteig": "C01", "gleis": "43", "laenge": "230", "hoehe": "76" }],
-            ["platforms", {"quelle": "osm", "bahnsteig": "C01", "gleis": "44", "laenge": "120", "hoehe": "76" }]
-        ],
-        "_cite": [
-            "EVS-Bahnsteige hinzugefügt (<a href=\"https://web.archive.org/web/20210507044949/https://www.evs-online.com/File/Infrastrukturbeschreibung_Fplj2022_Stand2020_0817.pdf\">Infrastrukturbeschreibung EVS 2022</a>)"
         ]
     }
 }

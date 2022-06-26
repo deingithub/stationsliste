@@ -1,0 +1,22 @@
+{
+    "6037": {
+        "_": "Stolberg (Rheinl) Hbf",
+        "_add": [
+            ["platforms", {"quelle": "osm", "bahnsteig": "A01", "gleis": "27", "laenge": "75", "hoehe": "76" }],
+            ["platforms", {"quelle": "osm", "bahnsteig": "C01", "gleis": "43", "laenge": "230", "hoehe": "76" }],
+            ["platforms", {"quelle": "osm", "bahnsteig": "C01", "gleis": "44", "laenge": "120", "hoehe": "76" }]
+        ],
+        "_cite": [
+            "EVS-Bahnsteige hinzugefügt (<a href=\"https://web.archive.org/web/20210507044949/https://www.evs-online.com/File/Infrastrukturbeschreibung_Fplj2022_Stand2020_0817.pdf\">Infrastrukturbeschreibung EVS 2022</a>)"
+        ]
+    },
+    "8005741": {
+        "_": "Stolberg-Altstadt",
+        "_add": [
+            ["platforms", {"quelle": "", "bahnsteig": "B01", "gleis": "4", "laenge": "75", "hoehe": "76" }]
+        ],
+        "_cite": [
+            "Bahnsteig hinzugefügt (<a href=\"https://web.archive.org/web/20210507044949/https://www.evs-online.com/File/Infrastrukturbeschreibung_Fplj2022_Stand2020_0817.pdf\">Infrastrukturbeschreibung EVS 2022</a>)"
+        ]
+    }
+}

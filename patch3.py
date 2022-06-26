@@ -1,10 +1,14 @@
-from helpers import station_id
 import json
+import pathlib
+
+from helpers import station_id
 
 PATCHES = {}
 
-with open("patches.json") as f:
-    PATCHES = {int(k): v for k, v in json.load(f).items()}
+
+for path in pathlib.Path("./patches").glob("*.json"):
+    with open(path) as f:
+        PATCHES |= {int(k): v for k, v in json.load(f).items()}
 
 
 def patched(station):

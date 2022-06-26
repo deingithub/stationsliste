@@ -1,0 +1,14 @@
+{
+    "155": {
+        "_": "Annaberg-Buchholz unterer Bahnhof",
+        "strasse": "Bahnhofsplatz 1",
+        "_modify": [
+            ["platforms", "i['gleis'] == '14 01'", "i | {'quelle': 'osm', 'gleis': '1', 'bahnsteig': 'B01'}"],
+            ["platforms", "i['gleis'] == '14 02'", "i | {'quelle': 'osm', 'gleis': '2', 'bahnsteig': 'B01'}"]
+        ],
+        "_cite": [
+            "Hausnummer eingetragen (OpenStreetMap)",
+            "Bahnsteige korrigiert (OpenStreetMap)"
+        ]
+    }
+}
